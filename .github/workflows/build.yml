@@ -13,11 +13,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Compilar
-        working-directory: rpg_fase1
         run: make
 
       - name: Disponibilizar o EBOOT.PBP pra download
         uses: actions/upload-artifact@v4
         with:
           name: rpg_fase1-EBOOT
-          path: rpg_fase1/EBOOT.PBP
+          path: EBOOT.PBP
